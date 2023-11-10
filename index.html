@@ -5,83 +5,198 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Social media dashboard</title>
 </head>
-<body>
+<body class="">
 
-  Social Media Dashboard
-  Total Followers: 23,004
+  <div class="main">
+    <div class="top_bg"></div>
+    <div class="wrap">
+      <div class="section01">
+        <div class="sec01_head">
+          <div class="col">
+            <h2 class="sec_ttl">Social Media Dashboard</h2>
+            <p class="sec_txt">Total Followers: 23,004</p>
+          </div><!-- /.col -->
+          <div class="col">
+            <p class="sec_txt">Dark Mode</p>
+            <!-- <p class="btn_toggle"></p> -->
+            <!-- Rounded switch -->
+            <label class="switch">
+              <input type="checkbox" class="toggle_switch">
+              <span class="slider round"></span>
+            </label>
+          </div><!-- /.col -->
+        </div><!-- /.sec01_head -->
 
-  Dark Mode
+        <div class="col_4_1">
+          <div class="col facebook">
+            <a href="javascript:void(0)">
+              <p class="txt_social"><span class="ico_social"></span>@nathanf</p>
 
-  
+              <div class="col_followers">
+                <p class="txt_followers">1987</p>
+                <p class="txt_label">Followers</p>
+              </div><!-- /.col_followers -->
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+              <div class="col_today">
+                <p class="txt_today _up"><span></span>12 Today</p>
+              </div>
+            </a>
+          </div><!-- /.col -->
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+          <div class="col twitter">
+            <a href="javascript:void(0)">
+              <p class="txt_social"><span class="ico_social"></span>@nathanf</p>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+              <div class="col_followers">
+                <p class="txt_followers">1044</p>
+                <p class="txt_label">Followers</p>
+              </div><!-- /.col_followers -->
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+              <div class="col_today">
+                <p class="txt_today _up"><span></span>99 Today</p>
+              </div>
+            </a>
+          </div><!-- /.col -->
 
+          <div class="col instagram">
+            <a href="javascript:void(0)">
+              <p class="txt_social"><span class="ico_social"></span>@realnathanf</p>
 
+              <div class="col_followers">
+                <p class="txt_followers">11k</p>
+                <p class="txt_label">Followers</p>
+              </div><!-- /.col_followers -->
 
-  Overview - Today
+              <div class="col_today">
+                <p class="txt_today _up"><span></span>1099 Today</p>
+              </div>
+            </a>
+          </div><!-- /.col -->
 
-  Page Views
-  87
-  3%
+          <div class="col youtube">
+            <a href="javascript:void(0)">
+              <p class="txt_social"><span class="ico_social"></span>Nathan F.</p>
 
-  Likes
-  52
-  2%
+              <div class="col_followers">
+                <p class="txt_followers">8239</p>
+                <p class="txt_label">Subscribers</p>
+              </div><!-- /.col_followers -->
 
-  Likes
-  5462
-  2257%
+              <div class="col_today">
+                <p class="txt_today _down"><span></span>144 Today</p>
+              </div>
+            </a>
+          </div><!-- /.col -->
+        </div><!-- /.col_4_1 -->
+      </div><!-- /.section01 -->
 
-  Profile Views
-  52k
-  1375%
+      <div class="section02">
+        <div class="sec01_head">
+          <div class="col">
+            <h2 class="sec_ttl">Overview - Today</h2>
+          </div><!-- /.col -->
+        </div><!-- /.sec01_head -->
 
-  Retweets
-  117
-  303%
+        <div class="col_4_1">
+          <div class="col facebook">
+            <a href="javascript:void(0)">
+              <p class="txt_social"><span class="ico_social"></span>Page Views</p>
 
-  Likes
-  507
-  553%
+              <div class="col_followers">
+                <p class="txt_followers">87</p>
+                <p class="txt_today _up"><span></span>3%</p>
+              </div><!-- /.col_followers -->
+            </a>
+          </div><!-- /.col -->
 
-  Likes
-  107
-  19%
+          <div class="col facebook">
+            <a href="javascript:void(0)">
+              <p class="txt_social"><span class="ico_social"></span>Likes</p>
 
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+              <div class="col_followers">
+                <p class="txt_followers">52</p>
+                <p class="txt_today _down"><span></span>2%</p>
+              </div><!-- /.col_followers -->
+            </a>
+          </div><!-- /.col -->
+
+          <div class="col instagram">
+            <a href="javascript:void(0)">
+              <p class="txt_social"><span class="ico_social"></span>Likes</p>
+
+              <div class="col_followers">
+                <p class="txt_followers">5462</p>
+                <p class="txt_today _up"><span></span>2257%</p>
+              </div><!-- /.col_followers -->
+            </a>
+          </div><!-- /.col -->
+
+          <div class="col instagram">
+            <a href="javascript:void(0)">
+              <p class="txt_social"><span class="ico_social"></span>Profile Views</p>
+
+              <div class="col_followers">
+                <p class="txt_followers">52k</p>
+                <p class="txt_today _up"><span></span>1375%</p>
+              </div><!-- /.col_followers -->
+            </a>
+          </div><!-- /.col -->
+
+          <div class="col twitter">
+            <a href="javascript:void(0)">
+              <p class="txt_social"><span class="ico_social"></span>Retweets</p>
+
+              <div class="col_followers">
+                <p class="txt_followers">117</p>
+                <p class="txt_today _up"><span></span>303%</p>
+              </div><!-- /.col_followers -->
+            </a>
+          </div><!-- /.col -->
+
+          <div class="col twitter">
+            <a href="javascript:void(0)">
+              <p class="txt_social"><span class="ico_social"></span>Likes</p>
+
+              <div class="col_followers">
+                <p class="txt_followers">507</p>
+                <p class="txt_today _up"><span></span>553%</p>
+              </div><!-- /.col_followers -->
+            </a>
+          </div><!-- /.col -->
+
+          <div class="col youtube">
+            <a href="javascript:void(0)">
+              <p class="txt_social"><span class="ico_social"></span>Likes</p>
+
+              <div class="col_followers">
+                <p class="txt_followers">107</p>
+                <p class="txt_today _down"><span></span>19%</p>
+              </div><!-- /.col_followers -->
+            </a>
+          </div><!-- /.col -->
+
+          <div class="col youtube">
+            <a href="javascript:void(0)">
+              <p class="txt_social"><span class="ico_social"></span>Total Views</p>
+
+              <div class="col_followers">
+                <p class="txt_followers">1407</p>
+                <p class="txt_today _down"><span></span>12%</p>
+              </div><!-- /.col_followers -->
+            </a>
+          </div><!-- /.col -->
+        </div>
+      </div><!-- /.sectio02 -->
+    </div><!-- /.wrap -->
+  </div><!-- /.main -->
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
